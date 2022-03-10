@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_navigation"
+    app:startDestination="@id/fragment_Patients">
+
+    <fragment
+        android:id="@+id/fragment_Patients"
+        android:name="com.example.infusion_therapy.fragment.Fragment_Patients"
+        android:label="Fragment_Patients" />
+    <fragment
+        android:id="@+id/fragment_Iv_Treatment"
+        android:name="com.example.infusion_therapy.fragment.Fragment_Iv_Treatment"
+        android:label="Fragment_Iv_Treatment" />
+    <fragment
+        android:id="@+id/fragment_Profile"
+        android:name="com.example.infusion_therapy.fragment.Fragment_Profile"
+        android:label="Fragment_Profile" >
+        <action
+            android:id="@+id/action_fragment_Profile_to_fragment_Edit_Profile"
+            app:destination="@id/fragment_Edit_Profile" />
+        <action
+            android:id="@+id/action_fragment_Profile_to_fragment_Change_Password"
+            app:destination="@id/fragment_Change_Password" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Change_Password"
+        android:name="com.example.infusion_therapy.fragment.Fragment_Change_Password"
+        android:label="Fragment_Change_Password" />
+    <fragment
+        android:id="@+id/fragment_Edit_Profile"
+        android:name="com.example.infusion_therapy.fragment.Fragment_Edit_Profile"
+        android:label="Fragment_Edit_Profile" >
+        <action
+            android:id="@+id/action_fragment_Edit_Profile_to_fragment_Profile"
+            app:destination="@id/fragment_Profile" />
+    </fragment>
+
+</navigation>
