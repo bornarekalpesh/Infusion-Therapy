@@ -13,6 +13,8 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding=DataBindingUtil.setContentView(this,R.layout.activity_login)
+
+
         binding?.tvForgetPassword?.setOnClickListener {
             binding!!.layLogin.visibility=View.GONE;
             binding!!.layForgotPassword.visibility=View.VISIBLE

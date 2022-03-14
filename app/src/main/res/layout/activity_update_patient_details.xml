@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/lay_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:padding="20dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/grey50"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_back_to_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:drawableLeft="@drawable/ic_arrow_left"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:text="Back"
+                    android:textColor="@color/colorMain"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@id/toolbar"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:elevation="50dp"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/lay_tabLayout"
+                        app:tabTextAppearance="@style/TabLayoutTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        app:tabMaxWidth="0dp"
+                        app:tabGravity="fill"
+                        app:tabMode="fixed"
+                        app:tabIndicatorGravity="top"
+                        app:tabIndicatorColor="@color/colorMain"
+                        app:tabTextColor="@color/black"
+                        app:tabSelectedTextColor="@color/colorMain"
+                        android:background="@color/white">
+                    </com.google.android.material.tabs.TabLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:elevation="50dp"
+                    android:layout_height="wrap_content">
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/lay_tabLayout_viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+                        tools:layout_editor_absoluteX="8dp" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</layout>

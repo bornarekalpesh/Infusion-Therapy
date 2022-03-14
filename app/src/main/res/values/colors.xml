@@ -12,4 +12,5 @@
     <color name="grey50">#F8F8F8</color>
 
     <color name="secondary500">#F37523</color>
+    <color name="textColor">#52525B</color>
 </resources>

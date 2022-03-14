@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Infusion-Therapy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="demo_string">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget interdum diam, sed tincidunt urna. Sed rutrum ultricies rhoncus. Vestibulum vehicula, metus a mollis aliquam, tellus magna elementum elit, eu efficitur erat diam a enim. Vivamus malesuada felis arcu, pulvinar efficitur diam dapibus dapibus. Cras nunc magna, efficitur scelerisque consectetur et, egestas nec nisi. Cras eros nunc, hendrerit id sapien eu, vestibulum commodo diam. Etiam est justo, vulputate non purus id, viverra consectetur odio. Cras elementum eleifend cursus.
+
+Cras rutrum at libero a iaculis. Pellentesque ac erat quam. Praesent felis lacus, semper ut varius nec, mattis varius ex. Praesent sed quam quis leo dictum consectetur id venenatis risus. Nullam elementum eleifend luctus. Nullam egestas eu velit id viverra. Curabitur blandit nibh eu quam tincidunt sodales. Curabitur non fringilla nulla. Fusce vitae gravida nibh, sit amet lacinia risus. Aliquam est elit, feugiat et enim in, congue rutrum elit. Fusce eu risus nec lectus rhoncus tempus et sit amet lacus. Quisque consectetur accumsan nibh sed egestas. Donec viverra, magna et mollis mattis, neque lacus aliquam libero, id bibendum massa nisi vel dui. Donec vestibulum ligula vel blandit tempus.
+
+Nullam turpis lorem, convallis nec eleifend at, vulputate quis eros. Pellentesque convallis rutrum lacinia. Aliquam felis libero, luctus eu pellentesque non, malesuada et orci. Integer auctor tincidunt lectus id aliquet. In iaculis placerat consequat. Nullam id sem euismod, tempor nisi sed, aliquet eros. Fusce at nisi metus. Suspendisse eget nulla a sapien imperdiet egestas a at ante.
+
+Nunc gravida augue augue, at eleifend orci convallis non. Phasellus ac sem accumsan, mattis ligula at, convallis mauris. Donec a consequat dolor, nec congue ante. Etiam neque tellus, scelerisque lacinia maximus ut, interdum eget justo. Nullam fringilla, leo vel fringilla accumsan, nibh turpis lacinia orci, at bibendum magna nibh lobortis turpis. Nunc et faucibus eros, sit amet eleifend libero. Nulla suscipit magna ante, vel pretium tellus maximus nec. Vestibulum bibendum nec lacus vitae cursus. Morbi metus nisl, sodales eget suscipit vel, gravida et ex. Pellentesque ornare tincidunt ex nec fermentum. Praesent id sem velit. Proin ultricies lobortis tortor ac lobortis.
+
+Proin vel euismod sem. Etiam finibus blandit eros. Aenean purus ante, auctor nec nulla sed, porttitor sollicitudin leo. Donec in ligula fermentum, elementum massa ut, placerat sem. Donec porttitor est ligula, et ultricies mauris lobortis in. Ut nec laoreet urna. Praesent semper, ex nec sagittis tempus, turpis mauris tincidunt mi, fermentum laoreet nisi dolor id ipsum.</string>
 </resources>
