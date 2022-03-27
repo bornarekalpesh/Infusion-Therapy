@@ -1,4 +1,4 @@
-package com.example.infusion_therapy.fragment
+package com.example.infusion_therapy.ui.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

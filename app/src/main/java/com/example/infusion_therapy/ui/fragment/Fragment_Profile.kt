@@ -1,4 +1,4 @@
-package com.example.infusion_therapy.fragment
+package com.example.infusion_therapy.ui.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
-import androidx.navigation.ui.NavigationUI
 import com.example.infusion_therapy.R
 import com.example.infusion_therapy.databinding.FragmentProfileBinding
 

@@ -6,18 +6,20 @@
         <entry key="..\:/Infusion-Therapy/app/src/main/res/drawable/ic_arrow_left.xml" value="0.3355" />
         <entry key="..\:/Infusion-Therapy/app/src/main/res/layout-v28/fragment_patients.xml" value="0.36666666666666664" />
         <entry key="..\:/Infusion-Therapy/app/src/main/res/layout/activity_dashboard.xml" value="0.18333333333333332" />
-        <entry key="..\:/Infusion-Therapy/app/src/main/res/layout/activity_login.xml" value="0.18" />
+        <entry key="..\:/Infusion-Therapy/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/Infusion-Therapy/app/src/main/res/layout/activity_splash.xml" value="0.18333333333333332" />
-        <entry key="..\:/Infusion-Therapy/app/src/main/res/layout/activity_update_patient_details.xml" value="0.18333333333333332" />
+        <entry key="..\:/Infusion-Therapy/app/src/main/res/layout/activity_update_ivpatient_details.xml" value="0.18333333333333332" />
+        <entry key="..\:/Infusion-Therapy/app/src/main/res/layout/activity_update_patient_details.xml" value="0.25" />
         <entry key="..\:/Infusion-Therapy/app/src/main/res/layout/fragment_change_password.xml" value="0.25" />
         <entry key="..\:/Infusion-Therapy/app/src/main/res/layout/fragment_edit_profile.xml" value="0.17630208333333333" />
-        <entry key="..\:/Infusion-Therapy/app/src/main/res/layout/fragment_iv_treatments.xml" value="0.18333333333333332" />
-        <entry key="..\:/Infusion-Therapy/app/src/main/res/layout/fragment_patients.xml" value="0.2" />
+        <entry key="..\:/Infusion-Therapy/app/src/main/res/layout/fragment_iv_treatments.xml" value="0.2" />
+        <entry key="..\:/Infusion-Therapy/app/src/main/res/layout/fragment_patients.xml" value="0.33" />
         <entry key="..\:/Infusion-Therapy/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
-        <entry key="..\:/Infusion-Therapy/app/src/main/res/layout/fragment_update_patient_t_c.xml" value="0.18" />
-        <entry key="..\:/Infusion-Therapy/app/src/main/res/layout/fragment_update_patients.xml" value="0.18" />
+        <entry key="..\:/Infusion-Therapy/app/src/main/res/layout/fragment_update_ivpatient_details.xml" value="0.271875" />
+        <entry key="..\:/Infusion-Therapy/app/src/main/res/layout/fragment_update_patient_t_c.xml" value="0.25" />
+        <entry key="..\:/Infusion-Therapy/app/src/main/res/layout/fragment_update_patients.xml" value="0.25" />
         <entry key="..\:/Infusion-Therapy/app/src/main/res/layout/item_exapandable_parent.xml" value="0.17630208333333333" />
-        <entry key="..\:/Infusion-Therapy/app/src/main/res/layout/item_patient_list.xml" value="0.18333333333333332" />
+        <entry key="..\:/Infusion-Therapy/app/src/main/res/layout/item_patient_list.xml" value="0.25" />
         <entry key="..\:/Infusion-Therapy/app/src/main/res/menu/bottom_menu.xml" value="0.18333333333333332" />
         <entry key="..\:/Osplabs-Projects/app/src/main/res/layout/activity_login.xml" value="0.10666666666666667" />
         <entry key="..\:/Osplabs-Projects/app/src/main/res/layout/activity_main.xml" value="0.1" />

@@ -1,10 +1,10 @@
-package com.example.infusion_therapy.activity
+package com.example.infusion_therapy.ui.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.infusion_therapy.R
-import com.example.infusion_therapy.adapters.TabbedAdapter
+import com.example.infusion_therapy.ui.adapters.TabbedAdapter
 import com.example.infusion_therapy.databinding.ActivityUpdatePatientDetailsBinding
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayout.OnTabSelectedListener
@@ -17,10 +17,9 @@ class UpdatePatientDetailsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding=DataBindingUtil.setContentView(this,R.layout.activity_update_patient_details)
 
-        binding!!.layTabLayout.addTab(binding!!.layTabLayout.newTab().setText("Patient Information"))
-        binding!!.layTabLayout.addTab(binding!!.layTabLayout.newTab().setText("Term & Conditions"))
+        binding!!.layTabLayout.addTab(binding!!.layTabLayout.newTab().setText("Patient Information").setIcon(R.drawable.ic_round_eliipse))
+        binding!!.layTabLayout.addTab(binding!!.layTabLayout.newTab().setText("Term & Conditions").setIcon(R.drawable.ic_round_eliipse))
         binding!!.layTabLayout.tabGravity=TabLayout.GRAVITY_FILL
-
 
         val adapter = TabbedAdapter(this, supportFragmentManager, binding!!.layTabLayout.getTabCount())
 

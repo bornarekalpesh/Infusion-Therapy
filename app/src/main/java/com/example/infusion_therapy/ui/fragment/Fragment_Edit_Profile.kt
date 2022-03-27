@@ -1,4 +1,4 @@
-package com.example.infusion_therapy.fragment
+package com.example.infusion_therapy.ui.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,7 +9,6 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import com.example.infusion_therapy.R
 import com.example.infusion_therapy.databinding.FragmentEditProfileBinding
-import com.example.infusion_therapy.databinding.FragmentProfileBinding
 import com.google.android.material.datepicker.MaterialDatePicker
 
 class Fragment_Edit_Profile: Fragment() {

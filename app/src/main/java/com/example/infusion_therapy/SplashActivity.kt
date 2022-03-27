@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.databinding.DataBindingUtil
-import com.example.infusion_therapy.activity.LoginActivity
+import com.example.infusion_therapy.ui.activity.LoginActivity
 import com.example.infusion_therapy.databinding.ActivitySplashBinding
 
 class SplashActivity : AppCompatActivity() {

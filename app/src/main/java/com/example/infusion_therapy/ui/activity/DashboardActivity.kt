@@ -1,4 +1,4 @@
-package com.example.infusion_therapy.activity
+package com.example.infusion_therapy.ui.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

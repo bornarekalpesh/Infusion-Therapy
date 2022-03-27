@@ -1,12 +1,14 @@
-package com.example.infusion_therapy.activity
+package com.example.infusion_therapy.ui.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import com.example.infusion_therapy.R
 import com.example.infusion_therapy.databinding.ActivityLoginBinding
+import com.example.infusion_therapy.utils.Constants
 
 class LoginActivity : AppCompatActivity() {
     var binding:ActivityLoginBinding?=null
@@ -21,8 +23,14 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding?.tvBackToLogin?.setOnClickListener {
-            binding!!.layLogin.visibility=View.VISIBLE;
-            binding!!.layForgotPassword.visibility=View.GONE
+            if(Constants.isOnline(it.context)){
+                binding!!.layLogin.visibility=View.VISIBLE;
+                binding!!.layForgotPassword.visibility=View.GONE
+            }
+            else{
+                Constants.showMessage(it.context,it.context.getString(R.string.msg_no_internet))
+            }
+
         }
 
         binding?.btnResetPassword?.setOnClickListener {
