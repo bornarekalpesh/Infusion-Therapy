@@ -14,6 +14,7 @@ import com.example.infusion_therapy.App
 import com.example.infusion_therapy.R
 import com.example.infusion_therapy.databinding.FragmentPatientsBinding
 import com.example.infusion_therapy.ui.adapters.AdpaterPatientList
+import com.example.infusion_therapy.utils.CustomProgress
 import com.example.infusion_therapy.viewmodel.Fragment_Patient_ViewModel
 import com.example.infusion_therapy.viewmodel.Fragment_Patient_ViewModelFactory
 
@@ -26,23 +27,24 @@ class Fragment_Patients:Fragment() {
         binding= DataBindingUtil.inflate(
             inflater, R.layout.fragment_patients, container, false)
 
-
         return binding.root;
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
-
         val repositoryFragmentPatientList=(requireContext().applicationContext as App).repositoryFragmentPatientList
+
         var viewModel=ViewModelProvider(this,Fragment_Patient_ViewModelFactory(repositoryFragmentPatientList)).get(Fragment_Patient_ViewModel::class.java)
+        viewModel.getPatietList("0","-1","","")
+
+        CustomProgress.getInstance().showProgress(requireContext())
 
         viewModel.response.observe(requireActivity(), Observer {
-            Log.e("FragmetList",it.toString())
             var adapterPatientsList=AdpaterPatientList(it)
             binding.rvPatientlist.layoutManager=LinearLayoutManager(activity, LinearLayoutManager.VERTICAL ,false)
             binding.rvPatientlist.adapter=adapterPatientsList
+            CustomProgress.getInstance().hideProgress()
         })
 
     }

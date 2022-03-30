@@ -10,10 +10,9 @@ object Constants {
 
     fun showMessage(context: Context,message:String){
         Toast.makeText(context,message,Toast.LENGTH_LONG).show()
-
     }
 
-    var baseUrl:String="http://3.7.81.188:5015"
+    var baseUrl:String="https://ivhydration.hplbusiness.com"
 
     fun isOnline(context: Context): Boolean {
         val connectivityManager =

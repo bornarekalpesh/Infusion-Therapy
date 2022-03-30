@@ -15,6 +15,7 @@ class DashboardActivity : AppCompatActivity() {
     var binding:ActivityDashboardBinding?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding=DataBindingUtil.setContentView(this,R.layout.activity_dashboard);
 
         val navController: NavController =
@@ -22,6 +23,7 @@ class DashboardActivity : AppCompatActivity() {
         val bottomNavigationView =
             findViewById<BottomNavigationView>(R.id.activity_main_bottom_navigation_view)
         setupWithNavController(bottomNavigationView, navController)
+
 
     }
 }

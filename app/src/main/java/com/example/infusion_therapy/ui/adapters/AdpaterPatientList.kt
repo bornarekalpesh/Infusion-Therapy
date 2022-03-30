@@ -1,6 +1,7 @@
 package com.example.infusion_therapy.ui.adapters
 
 import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -30,8 +31,10 @@ class AdpaterPatientList(var modelPatientListResponse: ModelPatientListResponse)
         binding.tvName.text=modelPatientListResponse.data[position].fullName
 
         binding.lay.setOnClickListener {
-            val intent = Intent(binding.tvName.context, UpdatePatientDetailsActivity::class.java)
-            binding.tvName.context.startActivity(intent)
+            var intent = Intent(binding.tvName.context, UpdatePatientDetailsActivity::class.java)
+                 intent.putExtra("patientId", modelPatientListResponse.data[position].patientId)
+                 Log.e("patientId",""+modelPatientListResponse.data[position].patientId)
+                 binding.tvName.context.startActivity(intent)
         }
         count++
     }

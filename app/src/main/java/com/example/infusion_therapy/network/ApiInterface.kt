@@ -1,17 +1,24 @@
 package com.example.infusion_therapy.network
 
+import com.example.infusion_therapy.model.patientDetails.RequestGetPatientDetails
+import com.example.infusion_therapy.model.patientDetails.ResponseGetPatientDetails
 import com.example.infusion_therapy.model.patientList.ModelPatientListResponse
+import com.example.infusion_therapy.model.patientList.PatientRequest
 import retrofit2.Response
-import retrofit2.http.Field
-import retrofit2.http.FormUrlEncoded
-import retrofit2.http.POST
+import retrofit2.http.*
+import retrofit2.Call
 
 interface ApiInterface {
-    @FormUrlEncoded
+
     @POST("/api/patient/list")
     suspend fun apiGetPatientList(
-        @Field("Start") Start: String,
-        @Field("PageSize") PageSize: String,
-        @Field("SortCol") SortCol: String,
-        @Field("SearchKey") SearchKey: String):Response<ModelPatientListResponse>
+        @Header("Authorization") authHeader:String,
+        @Body patientRequest: PatientRequest):Response<ModelPatientListResponse>
+
+    @POST("/api/patient/get")
+    fun getPatientDetails(
+        @Header("Authorization") authHeader:String,
+        @Body requestGetPatientDetails: RequestGetPatientDetails
+    ): Call<ResponseGetPatientDetails>
+
 }
